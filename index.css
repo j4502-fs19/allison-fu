@@ -1,21 +1,23 @@
+body {background-color: #F2E2C4;}
+
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: 'Love Ya Like A Sister', cursive;
     text-align:center;
+    font-size: 42px;
 }
 
 h2,h4{
-  font-family: Georgia, "Times New Roman", serif;
-  width:70%;
+  font-family: 'Manjari', sans-serif;
+  color:#012626;
 }
 
 #container{
-    width: 80%;
+    width: 45%;
     margin: 0 auto;
 }
 #intro{
-  padding-bottom: 40%;
+  padding-bottom: 4%;
 }
-
 
 #nav {
     padding: 0;
@@ -26,21 +28,23 @@ h2,h4{
     margin: 0;
     padding: 0;
 	  border-bottom: 1px solid #ccc;
+
 }
 
 #nav a:link, #nav a:visited {
 	  display:block;
     color: #ffffff;
-    background-color: #95a48b;
+    background-color: #BEBFA8;
     font-weight: bold;
     text-align:center;
     text-decoration: none;
     padding: 4px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'PT Serif', serif;
+    color:#012626;
 }
 
 #nav a:hover, #nav a:active {
-    background-color: #7b8b6f;
+    background-color: #698C7C;
 }
 
 #profile {
@@ -48,9 +52,26 @@ h2,h4{
   border: none;
 }
 
+#main {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #012626;
+}
+
+p a:link, p a:visited{
+  text-decoration:none;
+  color: #698C7C;
+}
+
+p a:hover{
+ color:#01403A;
+}
+
 #footer {
     color: black;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.8em;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
     border-top: 1px solid black;
-}
+    margin-top: 10%;
+  }
