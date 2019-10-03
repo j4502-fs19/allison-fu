@@ -122,3 +122,10 @@ p a:hover{
     width:300px;
   }
 }
+
+@media screen and (min-width:1200px){
+  #container{
+    width:900px;
+  }
+
+}
