@@ -14,34 +14,46 @@ h2,h4{
 #container{
     width: 85%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    grid-template-areas:
+        ". a a ."
+        "b b b b"
+        "c c c c"
+        "d d d d "
+        "e e e e ";
+    grid-gap: 20px;
 }
 
+h1{
+  grid-area: a;
+}
 #intro{
   display:flex;
   flex-direction:column;
   flex-wrap: wrap;
+  grid-area: b;
 }
 
 
 #profile {
   border: none;
 }
+
 #nav-box{
-  background-color: #BEBFA8;}
+  background-color: #BEBFA8;
+  grid-area: c;
+}
 
 #nav {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 	  list-style-type: none;
     display: flex;
     flex-direction:column;
 }
 
-#nav li {
-    margin: 0;
-    padding: 0;
-	  border: 1px solid #ccc;
-
-}
 
 #nav a:link, #nav a:visited {
 	  display:block;
@@ -50,7 +62,7 @@ h2,h4{
     font-weight: bold;
     text-align:center;
     text-decoration: none;
-    padding: 4px;
+    padding: 10px;
     font-family: 'PT Serif', serif;
     color:#012626;
 }
@@ -64,6 +76,7 @@ h2,h4{
   font-weight: 600;
   font-size: 16px;
   color: #012626;
+  grid-area: d;
 }
 
 p a:link, p a:visited{
@@ -75,12 +88,45 @@ p a:hover{
  color:#01403A;
 }
 
+
+#books {
+    padding: 0px;
+    margin: 0px;
+	  list-style-type: none;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+    "q . . . ."
+    ". r r r ."
+    ". r r r w"
+    "w . r r ."
+    grid-gap: 20px;
+}
+
+#one{
+  grid-area: q;
+}
+
+#two{
+  grid-area: w;
+}
+
+#three{
+  grid-area: e;
+}
+
+#finished{
+  grid-area: r;
+}
+
 #footer {
     color: black;
     font-family: 'PT Serif', serif;
     font-size: 14px;
     border-top: 1px solid black;
     margin-top: 10%;
+    grid-area: e;
   }
 
 @media screen and (min-width:600px) {
@@ -104,7 +150,7 @@ p a:hover{
     width:48%;
   }
 
-  img{
+  #profile{
     width:240px;
   }
 }
@@ -118,7 +164,7 @@ p a:hover{
   #intro-detail{
     width:48%;
   }
-  img{
+  #profile{
     width:300px;
   }
 }
