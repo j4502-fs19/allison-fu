@@ -98,10 +98,10 @@ p a:hover{
     grid-template-rows: repeat(3, 100px);
     grid-template-areas:
     "q . . . ."
+    ". r r r e"
     ". r r r ."
-    ". r r r w"
-    "w . r r ."
-    grid-gap: 20px;
+    "w r r r .";
+    grid-gap: 5px;
 }
 
 #one{
