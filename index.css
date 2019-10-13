@@ -14,6 +14,7 @@ h2,h4{
 #container{
     width: 85%;
     margin: 0 auto;
+    padding-bottom: 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: stretch;
@@ -30,14 +31,11 @@ h1{
   grid-area: a;
 }
 #intro{
-  display:flex;
-  flex-direction:column;
-  flex-wrap: wrap;
   grid-area: b;
 }
 
 
-#profile {
+#profile img{
   border: none;
 }
 
@@ -73,10 +71,41 @@ h1{
 
 #main {
   font-family: 'Manjari', sans-serif;
+  line-height: 1.5em;
   font-weight: 600;
   font-size: 16px;
   color: #012626;
   grid-area: d;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+          "aa"
+          "bb"
+          "cc"
+          "dd"
+          "ee";
+  grid-gap: 20px;
+}
+
+#content{
+ grid-area:aa;
+}
+
+#content-1{
+  grid-area:bb;
+}
+
+#content-2{
+  grid-area:cc;
+}
+
+#content-3{
+  grid-area:dd;
+}
+h4 {
+  grid-area:ee;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 p a:link, p a:visited{
@@ -89,43 +118,12 @@ p a:hover{
 }
 
 
-#books {
-    padding: 0px;
-    margin: 0px;
-	  list-style-type: none;
-    display: grid;
-    grid-template-columns:repeat(5, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas:
-    "q . . . ."
-    ". r r r e"
-    ". r r r ."
-    "w r r r .";
-    grid-gap: 5px;
-}
-
-#one{
-  grid-area: q;
-}
-
-#two{
-  grid-area: w;
-}
-
-#three{
-  grid-area: e;
-}
-
-#finished{
-  grid-area: r;
-}
-
 #footer {
     color: black;
     font-family: 'PT Serif', serif;
     font-size: 14px;
     border-top: 1px solid black;
-    margin-top: 10%;
+    margin-top: 10px;
     grid-area: e;
   }
 
@@ -136,6 +134,8 @@ p a:hover{
   }
 
   #intro{
+    display:flex;
+    flex-wrap: wrap;
     flex-direction:row;
     justify-content:space-between;
     align-items: center;
@@ -150,11 +150,26 @@ p a:hover{
     width:48%;
   }
 
-  #profile{
+  #profile img{
     width:240px;
+  }
+
+  #main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    grid-template-areas:
+            "aa aa aa"
+            "bb cc dd"
+            "ee . ."
+            ;
+        grid-gap: 20px;
   }
 }
 
+img{
+  width: 100%;
+}
 
 
 @media screen and (min-width:800px){
@@ -164,10 +179,12 @@ p a:hover{
   #intro-detail{
     width:48%;
   }
-  #profile{
+  #profile img{
     width:300px;
   }
 }
+
+
 
 @media screen and (min-width:1200px){
   #container{
