@@ -39,6 +39,12 @@ h1{
   border: none;
 }
 
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
 #nav-box{
   background-color: #BEBFA8;
   grid-area: c;
