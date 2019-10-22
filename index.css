@@ -3,9 +3,9 @@ body {
 }
 
 nav{
-  padding-right: 8%;
   font-family: 'Manjari', sans-serif;
   font-weight: bold;
+  grid-area: f;
 }
 
 nav ul li {
@@ -30,6 +30,8 @@ nav ul {
     display: none;
 }
 
+
+
 h1 {
     font-family: 'Love Ya Like A Sister', cursive;
     text-align:center;
@@ -49,6 +51,7 @@ h2, h4{
     grid-template-columns: repeat(4, 1fr);
     align-items: stretch;
     grid-template-areas:
+        "f f f f"
         ". a a ."
         "b b b b"
         "c c c c"
@@ -224,7 +227,8 @@ p a:hover{
 
 @media screen and (min-width:800px){
   #container{
-      width: 75%;}
+      width: 75%;
+    }
 
   #intro-detail{
     width:48%;
@@ -233,6 +237,8 @@ p a:hover{
   #profile img{
     width:300px;
   }
+
+
 }
 
 
