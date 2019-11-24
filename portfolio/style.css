@@ -208,7 +208,7 @@ footer p{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: stretch;
-      grid-gap: 35px;
+      grid-gap: 40px;
   }
 
 }
