@@ -136,7 +136,8 @@ nav ul li {
 #destinations{
   float: right;
   position: fixed;
-  padding-top: 20px:
+  padding-top: 20px;
+  font-weight: bold;
 }
 
 
