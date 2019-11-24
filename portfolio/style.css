@@ -281,7 +281,22 @@ footer p{
    text-decoration: underline;
   }
 
+  #intro{
+    margin:0 auto;
+    padding:20px;
+  }
 
+  #intro img{
+    border-radius: 50%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  #intro-detail p {
+    line-height: 1.8em;
+  }
 
 
 
@@ -336,8 +351,17 @@ footer p{
       width: 70%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: stretch;
+      align-items:stretch;
       grid-gap: 40px;
   }
 
+  #intro {
+      margin:0 auto;
+      width: 70%;
+      display: grid;
+      grid-template-columns:repeat(2, 1fr);
+      align-items: stretch;
+      justify-content:space-around;
+      grid-gap: 30px;
+  }
 }
